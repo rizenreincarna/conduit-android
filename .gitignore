@@ -12,3 +12,8 @@ captures/
 /signing/
 *.jks
 *.keystore
+__pycache__/
+*.pyc
+
+# Local tool state
+.claude/

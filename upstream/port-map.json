@@ -1,0 +1,166 @@
+{
+  "_doc": "Exceptions to the default Swift → Kotlin mapping (docs/PORTING.md §1, §2, §13). Read by scripts/portmap.py. An upstream file is classified by the first rule that matches: skip, core, partial, later, core_roots; anything else is outside the app. A pattern ending in /* matches a directory prefix; other patterns are fnmatch globs. A partial file's `lines` are the inclusive Core ranges; everything else in it belongs to `rest`.",
+  "core_roots": [
+    "Conduit/Models/",
+    "Conduit/Services/",
+    "Conduit/Views/"
+  ],
+  "core": [
+    "Conduit/ConduitApp.swift",
+    "Conduit/Theme.swift",
+    "Shared/LogRedaction.swift",
+    "Shared/WatchVoice/CustomAccentColor.swift",
+    "Conduit/Services/BotModeModels.swift"
+  ],
+  "partial": {
+    "Conduit/Services/BotManagement.swift": {
+      "lines": [
+        [1, 31]
+      ],
+      "rest": "bots-tasks-jobs"
+    },
+    "Conduit/Models/CapabilityCatalogModels.swift": {
+      "lines": [
+        [131, 201],
+        [500, 560]
+      ],
+      "rest": "bots-tasks-jobs"
+    }
+  },
+  "skip": {
+    "Conduit/Views/SidebarView.swift": "legacy drawer shell; V2 is upstream's default and only maintained shell",
+    "Conduit/Views/SidebarLayout.swift": "legacy drawer shell",
+    "Conduit/Views/SidebarTab.swift": "legacy drawer shell",
+    "Conduit/Services/ScreenshotCallFixture.swift": "screenshot fixture",
+    "Conduit/Services/WidgetLaunchUITestFixture.swift": "UI test fixture",
+    "Conduit/Views/SelectionFixtureView.swift": "UI test fixture",
+    "Conduit/Views/Components/MacTooltip.swift": "Mac Catalyst only",
+    "Conduit/Services/MetricKitReports.swift": "replaced by ApplicationExitInfo in services/CrashReportOffer.kt (// android:)",
+    "ConduitScreenshots/*": "App Store screenshot target",
+    "ConduitUITests/*": "XCUITest target; scripts/smoke.sh drives the same flows"
+  },
+  "skip_decls": {
+    "LegacySettingsView": "legacy drawer shell (private struct in Views/AuxiliaryViews.swift)",
+    "V2ShellPreference": "V2 is the only shell: every read of V2ShellPreference.isOn or useV2Shell is true, legacy branches dropped (// android: V2 is the only shell)"
+  },
+  "sections": {
+    "Keychain Helper": "app/src/main/kotlin/app/conduit/services/KeychainHelper.kt"
+  },
+  "paths": {},
+  "later": {
+    "bots-tasks-jobs": [
+      "Conduit/Services/Bot*",
+      "Conduit/Services/Capabilit*",
+      "Conduit/Services/Artifacts.swift",
+      "Conduit/Services/AppState+Artifacts.swift",
+      "Conduit/Services/Workspace*",
+      "Conduit/Services/AppState+Workspace.swift",
+      "Conduit/Services/Pulse*",
+      "Conduit/Services/AppState+Pulse.swift",
+      "Conduit/Services/GroupChatModels.swift",
+      "Conduit/Services/GroupRoom*",
+      "Conduit/Services/Kanban*",
+      "Conduit/Models/Kanban*",
+      "Conduit/Services/ChatCardsModel.swift",
+      "Conduit/Services/AppState+ChatCards.swift",
+      "Conduit/Cards/*",
+      "Conduit/Views/Bot*",
+      "Conduit/Views/Capabilities/*",
+      "Conduit/Views/CapabilitiesView.swift",
+      "Conduit/Views/GroupChatView.swift",
+      "Conduit/Views/GroupRoomScrollFollow.swift",
+      "Conduit/Views/Components/GroupRoomComposer.swift",
+      "Conduit/Views/Kanban/*",
+      "Conduit/Views/KanbanViews.swift",
+      "Conduit/Models/CronJobDraft.swift",
+      "Conduit/Views/V2/CronJobEditorSheet.swift",
+      "Conduit/Views/V2/V2ArtifactsViews.swift",
+      "Conduit/Views/V2/V2BotsView.swift",
+      "Conduit/Views/V2/V2PulsePage.swift",
+      "Conduit/Views/V2/V2TasksView.swift",
+      "Conduit/Views/V2/V2WorkspaceViews.swift",
+      "Conduit/Views/PulseSettingsViews.swift"
+    ],
+    "voice": [
+      "Conduit/Voice/*",
+      "Shared/GeminiLive/*",
+      "Shared/GrokLive/*",
+      "Shared/LocalLive/*",
+      "Shared/WatchVoice/*",
+      "Conduit/Services/AppState+HermesCalls.swift",
+      "Conduit/Services/AppState+LiveVoiceConsent.swift",
+      "Conduit/Services/AppState+SpokenApprovals.swift",
+      "Conduit/Services/AppState+VoiceHostTools.swift",
+      "Conduit/Services/AppState+VoiceMessage.swift",
+      "Conduit/Services/AppState+WakePhrase.swift",
+      "Conduit/Services/VoiceReadSeal.swift",
+      "Conduit/Views/DictationSettingsSection.swift",
+      "Conduit/Views/*Live*Views.swift",
+      "Conduit/Views/LiveVoice*",
+      "Conduit/Views/HermesCallSettingsViews.swift",
+      "Conduit/Views/LiquidOrb/*",
+      "Conduit/Views/MinimisedLiveVoiceBar.swift",
+      "Conduit/Views/ReadAloudPlayerBar.swift",
+      "Conduit/Views/SpeechServer*",
+      "Conduit/Views/V2/ChatVoiceButtonAction.swift",
+      "Conduit/Views/V2/V2VoiceButton.swift",
+      "Conduit/Views/Voice*",
+      "Conduit/Views/Components/ComposerDictationStopButton.swift",
+      "Conduit/Views/Components/UndeliveredDictationNotice.swift",
+      "Conduit/Views/Components/VoiceInputLevelMeter.swift",
+      "Conduit/Views/Components/VoiceMessageBar.swift"
+    ],
+    "notifications": [
+      "Conduit/Services/PushNotificationService.swift",
+      "Conduit/Services/NotificationCategories.swift",
+      "Conduit/Services/NotificationKeyRotation.swift",
+      "Conduit/Services/LiveTurnActivities.swift",
+      "Conduit/Services/LiveActivityUpdateThrottle.swift",
+      "Conduit/Services/ReplySourceNotifications.swift",
+      "Conduit/Services/CronNotifications.swift",
+      "Conduit/Services/AppState+CronNotifications.swift",
+      "Shared/NotificationE2E*",
+      "Shared/Notifications/*",
+      "Conduit/Views/ReplySourcesSettingsSection.swift",
+      "ConduitNotificationService/*"
+    ],
+    "phone-data": [
+      "Conduit/Phone/*",
+      "Conduit/Location/*",
+      "Conduit/Health/*",
+      "Shared/Location/*",
+      "Conduit/Services/AppState+HealthSync.swift",
+      "Conduit/Services/AppState+Location.swift",
+      "Conduit/Services/AppState+PhoneSync.swift",
+      "Conduit/Views/HealthSettingsViews.swift",
+      "Conduit/Views/LocationSettingsViews.swift",
+      "Conduit/Views/PhoneSettingsViews.swift",
+      "ConduitLocationPush/*"
+    ],
+    "widgets-shortcuts-share": [
+      "Conduit/Intents/*",
+      "Conduit/Shortcuts/*",
+      "Shared/ShareDraft*",
+      "Shared/Widgets/*",
+      "Conduit/Services/AppState+ShareDraft.swift",
+      "Conduit/Services/AppState+ShortcutInbox.swift",
+      "Conduit/Services/AppState+ShortcutSend.swift",
+      "Conduit/Services/AppState+WidgetLaunch.swift",
+      "Conduit/Services/AppState+Widgets.swift",
+      "Conduit/Services/AppState+ScreenQuestion.swift",
+      "Conduit/Services/WidgetLaunchCoordinator.swift",
+      "Conduit/Services/WidgetSnapshotPublisher.swift",
+      "Conduit/Views/ShortcutInboxSettingsViews.swift",
+      "Conduit/Views/ScreenQuestionViews.swift",
+      "Conduit/Views/AskHermesPromptView.swift",
+      "ConduitShareExtension/*",
+      "ConduitWidgets/*"
+    ],
+    "wear-auto": [
+      "Conduit/Watch/*",
+      "Conduit/CarPlay/*",
+      "ConduitWatch/*",
+      "Conduit/Views/CarPlaySettingsSection.swift"
+    ]
+  }
+}

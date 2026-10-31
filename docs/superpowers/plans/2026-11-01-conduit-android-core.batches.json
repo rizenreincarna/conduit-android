@@ -1,0 +1,1389 @@
+{
+ "upstream": {
+  "tag": "ios/v2.2.1-build-244",
+  "sha": "6ddae94189dd21becf2e2892038154c19d47393f"
+ },
+ "batches": {
+  "1": {
+   "phase": "A",
+   "wave": 1,
+   "model": "self",
+   "files": [],
+   "sections": [],
+   "tests": [],
+   "new": [
+    "VersionSchemeTest"
+   ]
+  },
+  "2a": {
+   "phase": "A",
+   "wave": 2,
+   "model": "opus",
+   "files": [],
+   "sections": [],
+   "tests": [],
+   "new": [
+    "StringsShimTest",
+    "SwiftCodableTest",
+    "JSONSerializationShimTest",
+    "UrlShimTest"
+   ]
+  },
+  "2b": {
+   "phase": "A",
+   "wave": 2,
+   "model": "opus",
+   "files": [
+    "Shared/LogRedaction.swift"
+   ],
+   "sections": [
+    "KeychainHelper"
+   ],
+   "tests": [
+    "LogRedactionTests",
+    "InMemoryKeychainBackend",
+    "ScratchDefaults"
+   ],
+   "new": [
+    "KeychainHelperTest"
+   ]
+  },
+  "4": {
+   "phase": "A",
+   "wave": 2,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Services/AppLanguage.swift"
+   ],
+   "sections": [],
+   "tests": [],
+   "new": [
+    "L10nFormatTest"
+   ]
+  },
+  "3": {
+   "phase": "A",
+   "wave": 3,
+   "model": "opus",
+   "files": [],
+   "sections": [],
+   "tests": [],
+   "new": [
+    "URLSessionShimTest"
+   ]
+  },
+  "5": {
+   "phase": "A",
+   "wave": 3,
+   "model": "opus",
+   "files": [
+    "Conduit/Theme.swift",
+    "Shared/WatchVoice/CustomAccentColor.swift",
+    "Conduit/Views/Components/ScaledFont.swift",
+    "Conduit/Views/Components/DynamicTypeSupport.swift",
+    "Conduit/Views/Components/ConduitSheetHeader.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "AccentContrastTests"
+   ],
+   "new": [
+    "SymbolsTest"
+   ]
+  },
+  "6": {
+   "phase": "A",
+   "wave": 4,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Services/ConnectionURLPolicy.swift",
+    "Conduit/Services/CloudflareAccess.swift",
+    "Conduit/Services/CustomHeaders.swift",
+    "Conduit/Views/CustomHeadersEditor.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "ConnectionURLPolicyOriginTests",
+    "CustomHeadersTests",
+    "CloudflareAccessTests (part)"
+   ],
+   "new": []
+  },
+  "B0": {
+   "phase": "B",
+   "wave": 5,
+   "model": "sonnet",
+   "files": [],
+   "sections": [],
+   "tests": [],
+   "new": []
+  },
+  "B1a": {
+   "phase": "B",
+   "wave": 6,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Models/Models.swift",
+    "Conduit/Models/CapabilityCatalogModels.swift"
+   ],
+   "sections": [],
+   "tests": [],
+   "new": []
+  },
+  "B1b": {
+   "phase": "B",
+   "wave": 6,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Models/AllProfilesChats.swift",
+    "Conduit/Models/AppIconChoice.swift",
+    "Conduit/Models/ChatListSections.swift",
+    "Conduit/Models/ClarifyHistoryRecord.swift",
+    "Conduit/Models/CronScheduleText.swift",
+    "Conduit/Models/PendingComposerSend.swift",
+    "Conduit/Models/PinnedChatOrder.swift",
+    "Conduit/Models/PinnedReplies.swift",
+    "Conduit/Models/ProfileTimeZone.swift",
+    "Conduit/Models/SessionNesting.swift",
+    "Conduit/Models/SessionStars.swift",
+    "Conduit/Models/ToolCatalog.swift",
+    "Conduit/Models/ToolResultPresentation.swift",
+    "Conduit/Models/ToolSearchBridge.swift",
+    "Conduit/Models/UsageReport.swift"
+   ],
+   "sections": [],
+   "tests": [],
+   "new": []
+  },
+  "B2a": {
+   "phase": "B",
+   "wave": 6,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Services/AgentPlan.swift",
+    "Conduit/Services/AgentSettings.swift",
+    "Conduit/Services/ApprovalDisplayText.swift",
+    "Conduit/Services/BackgroundConnectionGrace.swift",
+    "Conduit/Services/BackgroundTaskHold.swift",
+    "Conduit/Services/BiometricAuth.swift",
+    "Conduit/Services/BotManagement.swift",
+    "Conduit/Services/BotModeModels.swift",
+    "Conduit/Services/ChatOnScreen.swift",
+    "Conduit/Services/ChatReadState.swift",
+    "Conduit/Services/ChatResumeCoordinator.swift",
+    "Conduit/Services/ChatResumePolicy.swift",
+    "Conduit/Services/ChatResumeStore.swift",
+    "Conduit/Services/ChatReturnSurface.swift",
+    "Conduit/Services/ChatScrollEngine.swift",
+    "Conduit/Services/ChatScrollState.swift",
+    "Conduit/Services/ChatStepSummaries.swift",
+    "Conduit/Services/ChatSync.swift",
+    "Conduit/Services/ChatTakeover.swift",
+    "Conduit/Services/ChatViewportTrace.swift",
+    "Conduit/Services/ConduitAppLink.swift",
+    "Conduit/Services/ConnectionFailure.swift",
+    "Conduit/Services/ConnectionRepair.swift",
+    "Conduit/Services/ConnectionSetupApplication.swift",
+    "Conduit/Services/ConnectionSetupDraft.swift",
+    "Conduit/Services/ConnectionSetupFlow.swift",
+    "Conduit/Services/ConnectionSetupTest.swift",
+    "Conduit/Services/ConnectionTimeline.swift",
+    "Conduit/Services/ContextUploadPolicy.swift",
+    "Conduit/Services/ConversationIdentity.swift",
+    "Conduit/Services/ConversationIdentityIndex.swift",
+    "Conduit/Services/CrashReportOffer.swift",
+    "Conduit/Services/DashboardBackgroundRequests.swift",
+    "Conduit/Services/DashboardConnectLink.swift",
+    "Conduit/Services/DashboardFileDownload.swift",
+    "Conduit/Services/DashboardPath.swift",
+    "Conduit/Services/DashboardRequestAuthorizer.swift",
+    "Conduit/Services/DashboardSignIn.swift",
+    "Conduit/Services/DashboardSignInRedirect.swift",
+    "Conduit/Services/DashboardTicketBridge.swift",
+    "Conduit/Services/DashboardWebSocketSession.swift",
+    "Conduit/Services/DataURLLimits.swift",
+    "Conduit/Services/GatewayReadinessProbe.swift",
+    "Conduit/Services/GatewayRestart.swift",
+    "Conduit/Services/Haptics.swift",
+    "Conduit/Services/HermesClient.swift",
+    "Conduit/Services/HermesSessionReference.swift",
+    "Conduit/Services/HostKeyConflict.swift"
+   ],
+   "sections": [],
+   "tests": [],
+   "new": []
+  },
+  "B2b": {
+   "phase": "B",
+   "wave": 6,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Services/InteractionIdleState.swift",
+    "Conduit/Services/NativeAuthClient.swift",
+    "Conduit/Services/NativeOAuth.swift",
+    "Conduit/Services/NotifierPluginChangelog.swift",
+    "Conduit/Services/NotifierPluginLatestVersion.swift",
+    "Conduit/Services/NotifierPluginNoticeChannel.swift",
+    "Conduit/Services/NotifierPluginStatus.swift",
+    "Conduit/Services/NotifierPluginUpdate.swift",
+    "Conduit/Services/OfflineChatCache.swift",
+    "Conduit/Services/PersistedTranscriptWindow.swift",
+    "Conduit/Services/PictureGeneration.swift",
+    "Conduit/Services/PictureUpload.swift",
+    "Conduit/Services/PowerPolicy.swift",
+    "Conduit/Services/Predictive.swift",
+    "Conduit/Services/PresentedScreens.swift",
+    "Conduit/Services/PreviewText.swift",
+    "Conduit/Services/ProfileAppearanceStore.swift",
+    "Conduit/Services/ProfileConfigWriteQueue.swift",
+    "Conduit/Services/ProfileGlowColors.swift",
+    "Conduit/Services/SavedDashboardRegistry.swift",
+    "Conduit/Services/ServerSignOut.swift",
+    "Conduit/Services/SessionCatalogLoad.swift",
+    "Conduit/Services/SessionContentSearch.swift",
+    "Conduit/Services/SessionLiveStatusIndex.swift",
+    "Conduit/Services/SessionMutationIdentity.swift",
+    "Conduit/Services/SessionPinSync.swift",
+    "Conduit/Services/SessionPresentationCache.swift",
+    "Conduit/Services/SessionReference.swift",
+    "Conduit/Services/SessionRenameOperation.swift",
+    "Conduit/Services/SessionYoloStore.swift",
+    "Conduit/Services/StreamEventParser.swift",
+    "Conduit/Services/SyncedPreferences.swift",
+    "Conduit/Services/TranscriptImageCache.swift",
+    "Conduit/Services/TranscriptPerformanceInstrumentation.swift",
+    "Conduit/Services/TranscriptPictureMemory.swift",
+    "Conduit/Services/TurnSurface.swift",
+    "Conduit/Services/UserFacingError.swift"
+   ],
+   "sections": [],
+   "tests": [],
+   "new": []
+  },
+  "B5a": {
+   "phase": "B",
+   "wave": 7,
+   "model": "opus",
+   "files": [],
+   "sections": [],
+   "tests": [],
+   "new": []
+  },
+  "B3a": {
+   "phase": "B",
+   "wave": 8,
+   "model": "opus",
+   "files": [],
+   "sections": [
+    "AppState",
+    "AppState_Support"
+   ],
+   "tests": [],
+   "new": []
+  },
+  "B3b": {
+   "phase": "B",
+   "wave": 8,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Services/AppState+AgentSettings.swift",
+    "Conduit/Services/AppState+ChatOnScreen.swift",
+    "Conduit/Services/AppState+FinishSetup.swift",
+    "Conduit/Services/AppState+GatewayRestart.swift",
+    "Conduit/Services/AppState+NotifierPluginUpdate.swift",
+    "Conduit/Services/AppState+PendingSend.swift",
+    "Conduit/Services/AppState+PinnedChatOrder.swift",
+    "Conduit/Services/AppState+PinnedReplies.swift",
+    "Conduit/Services/AppState+Predictive.swift",
+    "Conduit/Services/AppState+PresentedScreens.swift",
+    "Conduit/Services/AppState+StepSummaries.swift",
+    "Conduit/Services/AppState+SyncedPreferences.swift",
+    "Conduit/Services/AppState+TurnSurface.swift",
+    "Conduit/Services/AppState+Usage.swift",
+    "Conduit/Services/AppState+V2Shell.swift"
+   ],
+   "sections": [
+    "AppState_Connection",
+    "AppState_Session",
+    "AppState_SharedDrafts",
+    "AppState_BotMode",
+    "AppState_Runtime",
+    "AppState_UIState",
+    "AppState_SendingWhileConnecting",
+    "AppState_AskHermesAboutScreen",
+    "AppState_Capabilities",
+    "AppState_GeminiLiveVoiceMode",
+    "AppState_GPTLiveVoiceMode",
+    "AppState_GPTLiveBilling",
+    "AppState_GrokLiveVoiceMode",
+    "AppState_LocalLiveVoiceMode",
+    "AppState_WakePhrase",
+    "AppState_Cron",
+    "AppState_LifecycleCoordination",
+    "AppState_OfflineChatCache",
+    "AppState_SendingWhileConnecting2",
+    "AppState_SavedChatList",
+    "AppState_Persistence",
+    "AppState_VoiceHistory",
+    "AppState_Outbox",
+    "AppState_Titles",
+    "AppState_Resume",
+    "AppState_FindingChatsFromACall",
+    "AppState_WaitingCall",
+    "AppState_MinimisedLiveVoice",
+    "AppState_LiveVoiceAttachedToAChat",
+    "AppState_Stars",
+    "AppState_ReadState",
+    "AppState_SessionReferences",
+    "AppState_QuotingIntoTheComposer",
+    "AppState_GroupChats",
+    "AppState_DashboardScopedPresentation",
+    "AppState_RelayGatewaysEachDashboardsHostReported",
+    "AppState_ConnectionManagement",
+    "AppState_ConnectionRepair",
+    "AppState_SavedDashboards"
+   ],
+   "tests": [],
+   "new": []
+  },
+  "B3c": {
+   "phase": "B",
+   "wave": 8,
+   "model": "sonnet",
+   "files": [],
+   "sections": [
+    "AppState_AuthoritativeReconciliation",
+    "AppState_ReconnectAndSceneLifecycle",
+    "AppState_ConnectionTimeline",
+    "AppState_ForegroundObservationalRefresh",
+    "AppState_CrossSurfaceTranscriptFreshness",
+    "AppState_AuthoritativeTurnStateCorrection",
+    "AppState_SessionManagement",
+    "AppState_OneChatOnTwoDevices",
+    "AppState_BotMode2",
+    "AppState_BotManagement",
+    "AppState_ProfilePhotosFromHermes",
+    "AppState_NewChat",
+    "AppState_Reactions",
+    "AppState_ComposerActions",
+    "AppState_ChatTakeover",
+    "AppState_SlashCommands",
+    "AppState_SessionCompression",
+    "AppState_ProfilesAndPreferences",
+    "AppState_Capabilities2",
+    "AppState_ToolsCatalogForStepRows",
+    "AppState_ScheduledJobs",
+    "AppState_SecondaryProfileTitleRecovery",
+    "AppState_StreamEventHandling",
+    "AppState_ClarifyLifecycle",
+    "AppState_ChatSupportSurfaces",
+    "AppState_AppleWatchVoice",
+    "AppState_LiveTurnProjection",
+    "AppState_AttachmentHelper",
+    "AppState_AllProfilesInOneChatsList"
+   ],
+   "tests": [],
+   "new": []
+  },
+  "B4a": {
+   "phase": "B",
+   "wave": 8,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Views/Components/AttachmentDrop.swift",
+    "Conduit/Views/Components/BoundedRemoteImage.swift",
+    "Conduit/Views/Components/CameraCapture.swift",
+    "Conduit/Views/Components/ChatCardHeight.swift",
+    "Conduit/Views/Components/ChatCards.swift",
+    "Conduit/Views/Components/ChatQuote.swift",
+    "Conduit/Views/Components/ChatTypography.swift",
+    "Conduit/Views/Components/ColumnDivider.swift",
+    "Conduit/Views/Components/ComposerAttachments.swift",
+    "Conduit/Views/Components/ComposerBar.swift",
+    "Conduit/Views/Components/ComposerDraftStore.swift",
+    "Conduit/Views/Components/ComposerFullEditor.swift",
+    "Conduit/Views/Components/ComposerLayout.swift",
+    "Conduit/Views/Components/ComposerPasteTextView.swift",
+    "Conduit/Views/Components/ComposerReturnKey.swift",
+    "Conduit/Views/Components/ComposerUpdates.swift",
+    "Conduit/Views/Components/GatewayMediaDataURLResolver.swift",
+    "Conduit/Views/Components/GatewayMediaTags.swift",
+    "Conduit/Views/Components/HTMLPreviewBlock.swift",
+    "Conduit/Views/Components/ImageGalleryItems.swift",
+    "Conduit/Views/Components/ImageGalleryViewer.swift",
+    "Conduit/Views/Components/ImagePicker.swift",
+    "Conduit/Views/Components/InlineAudioClip.swift",
+    "Conduit/Views/Components/KeyboardDoneButton.swift",
+    "Conduit/Views/Components/MarkdownLargeDocument.swift",
+    "Conduit/Views/Components/MarkdownLargeDocumentView.swift",
+    "Conduit/Views/Components/MarkdownProseRun.swift",
+    "Conduit/Views/Components/MarkdownRichContent.swift",
+    "Conduit/Views/Components/MarkdownSelectionCoordinator.swift",
+    "Conduit/Views/Components/MarkdownSelectionHandles.swift",
+    "Conduit/Views/Components/MarkdownText.swift",
+    "Conduit/Views/Components/MarkupBlock.swift",
+    "Conduit/Views/Components/MediaPreviewPresenter.swift",
+    "Conduit/Views/Components/MessageReactionViews.swift",
+    "Conduit/Views/Components/PastedTextAttachment.swift",
+    "Conduit/Views/Components/PendingComposerSendBubble.swift",
+    "Conduit/Views/Components/PredictiveRow.swift",
+    "Conduit/Views/Components/ReadableContentWidth.swift",
+    "Conduit/Views/Components/ReturnKeyTextView.swift",
+    "Conduit/Views/Components/SelectableTextCanvas.swift",
+    "Conduit/Views/Components/SelectableTextView.swift",
+    "Conduit/Views/Components/StreamingText.swift",
+    "Conduit/Views/Login/AuthWebPasskeyNotice.swift",
+    "Conduit/Views/Login/ConnectLinkSheet.swift",
+    "Conduit/Views/Login/DashboardCodeScanner.swift",
+    "Conduit/Views/Login/LoginFlowModel.swift",
+    "Conduit/Views/Login/LoginScreens.swift",
+    "Conduit/Views/LoginView.swift"
+   ],
+   "sections": [],
+   "tests": [],
+   "new": []
+  },
+  "B4b": {
+   "phase": "B",
+   "wave": 8,
+   "model": "sonnet",
+   "files": [
+    "Conduit/ConduitApp.swift",
+    "Conduit/Views/AgentSettingsViews.swift",
+    "Conduit/Views/AuxiliaryViews.swift",
+    "Conduit/Views/ChatActivityRows.swift",
+    "Conduit/Views/ChatRowDisclosure.swift",
+    "Conduit/Views/ChatRowState.swift",
+    "Conduit/Views/ChatScrollSurfaceLocator.swift",
+    "Conduit/Views/ChatSupportSheets.swift",
+    "Conduit/Views/ChatView.swift",
+    "Conduit/Views/ConduitPluginViews.swift",
+    "Conduit/Views/ConnectionSetupComponents.swift",
+    "Conduit/Views/ConnectionSetupForm.swift",
+    "Conduit/Views/ConnectionSetupView.swift",
+    "Conduit/Views/CrashReportBanner.swift",
+    "Conduit/Views/GatewayRestartViews.swift",
+    "Conduit/Views/GeneratePictureSheet.swift",
+    "Conduit/Views/ModelPickerView.swift",
+    "Conduit/Views/ModelSearch.swift",
+    "Conduit/Views/OfflineChatTranscriptView.swift",
+    "Conduit/Views/PinnedChatsOrderSheet.swift",
+    "Conduit/Views/PinnedReplyViews.swift",
+    "Conduit/Views/PredictiveSettingsView.swift",
+    "Conduit/Views/PresentedConfirmPanel.swift",
+    "Conduit/Views/ProfilePickerSheet.swift",
+    "Conduit/Views/RootView.swift",
+    "Conduit/Views/SavedDashboardsView.swift",
+    "Conduit/Views/SyncedPreferencesViews.swift",
+    "Conduit/Views/ToolResultViews.swift",
+    "Conduit/Views/UsageSettingsViews.swift",
+    "Conduit/Views/V2/V2AllProfilesSheet.swift",
+    "Conduit/Views/V2/V2ChatsView.swift",
+    "Conduit/Views/V2/V2ConversationScreen.swift",
+    "Conduit/Views/V2/V2FinishSetupCard.swift",
+    "Conduit/Views/V2/V2ProjectPage.swift",
+    "Conduit/Views/V2/V2SessionRow.swift",
+    "Conduit/Views/V2/V2SettingsTab.swift",
+    "Conduit/Views/V2/V2Shell.swift",
+    "Conduit/Views/V2/V2TopBar.swift"
+   ],
+   "sections": [],
+   "tests": [],
+   "new": []
+  },
+  "B5b": {
+   "phase": "B",
+   "wave": 9,
+   "model": "opus",
+   "files": [],
+   "sections": [],
+   "tests": [],
+   "new": [
+    "ConduitTestEnvironment",
+    "AppStateConstructionTest"
+   ]
+  },
+  "D0": {
+   "phase": "D",
+   "wave": 10,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Models/Models.swift",
+    "Conduit/Models/PinnedReplies.swift",
+    "Conduit/Models/ToolResultPresentation.swift",
+    "Conduit/Models/CronScheduleText.swift",
+    "Conduit/Models/SessionNesting.swift",
+    "Conduit/Models/PinnedChatOrder.swift",
+    "Conduit/Models/UsageReport.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "ChatListSectionsTests",
+    "ClarifyHistoryRecordTests",
+    "ClarifyLegacyDecodeTests",
+    "CronScheduleTextTests",
+    "PinnedChatOrderTests",
+    "ProfileTimeZoneTests",
+    "ToolResultPresentationTests",
+    "ToolSearchBridgeTests",
+    "ProfileModelDefaultsTests",
+    "SessionNestingModelTests",
+    "AppLanguageTests",
+    "SecurityBoundaryTests"
+   ],
+   "new": []
+  },
+  "D1": {
+   "phase": "D",
+   "wave": 10,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Services/NativeOAuth.swift",
+    "Conduit/Services/NativeAuthClient.swift",
+    "Conduit/Services/DashboardBackgroundRequests.swift",
+    "Conduit/Services/ServerSignOut.swift",
+    "Conduit/Services/DashboardRequestAuthorizer.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "NativeOAuthTests",
+    "NativeAuthClientTests",
+    "NativeAuthClientIntegrationTests",
+    "DashboardSignInDecisionTests",
+    "UserFacingErrorTests",
+    "DashboardRequestAuthorizerTests",
+    "ConduitExternalLinkTests",
+    "ServerSignOutTests",
+    "DashboardSocketFixture"
+   ],
+   "new": []
+  },
+  "D2a": {
+   "phase": "D",
+   "wave": 10,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Services/ConnectionSetupFlow.swift",
+    "Conduit/Services/ConnectionSetupTest.swift",
+    "Conduit/Services/ConnectionFailure.swift",
+    "Conduit/Services/ConnectionSetupDraft.swift",
+    "Conduit/Services/ConnectionSetupApplication.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "ConnectionFailureTests",
+    "ConnectionSetupFlowTests",
+    "ConnectionSetupDraftTests",
+    "ConnectionSetupTestTests",
+    "DashboardSignInAgreementTests",
+    "ConnectionSetupSettingsTests"
+   ],
+   "new": []
+  },
+  "D3": {
+   "phase": "D",
+   "wave": 10,
+   "model": "opus",
+   "files": [
+    "Conduit/Services/HermesClient.swift",
+    "Conduit/Services/StreamEventParser.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "StreamEventParserTests",
+    "AnyCodableTests",
+    "HermesClientTests+Usage",
+    "SessionActivityTimestampTests"
+   ],
+   "new": []
+  },
+  "D2b": {
+   "phase": "D",
+   "wave": 11,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Services/SavedDashboardRegistry.swift",
+    "Conduit/Services/ConnectionRepair.swift",
+    "Conduit/Services/DashboardFileDownload.swift",
+    "Conduit/Services/GatewayRestart.swift",
+    "Conduit/Services/PowerPolicy.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "ConnectionTimelineTests",
+    "BackgroundConnectionGraceTests",
+    "PowerPolicyTests",
+    "GatewayRestartTests",
+    "ReconnectBackoffTests",
+    "PinnedRepliesTests"
+   ],
+   "new": []
+  },
+  "D4": {
+   "phase": "D",
+   "wave": 11,
+   "model": "opus",
+   "files": [
+    "Conduit/Services/DashboardTicketBridge.swift",
+    "Conduit/Services/ChatResumeCoordinator.swift",
+    "Conduit/Services/ChatResumeStore.swift",
+    "Conduit/Services/ChatResumePolicy.swift",
+    "Conduit/Services/SessionReference.swift",
+    "Conduit/Services/HermesSessionReference.swift",
+    "Conduit/Services/BotModeModels.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "ChatResumeCoordinatorTests",
+    "ChatResumePolicyTests",
+    "ChatResumeStoreTests",
+    "MarkdownReferenceLinkTests+HermesSessions",
+    "DashboardTicketBridgeTests",
+    "MissingSessionRecoveryTests",
+    "ProfileDiscoveryTests",
+    "HeldDashboardRequests",
+    "DashboardCookieClearingTests"
+   ],
+   "new": []
+  },
+  "D5a": {
+   "phase": "D",
+   "wave": 11,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Services/SessionPresentationCache.swift",
+    "Conduit/Services/OfflineChatCache.swift",
+    "Conduit/Services/SessionContentSearch.swift",
+    "Conduit/Services/ChatSync.swift",
+    "Conduit/Services/PersistedTranscriptWindow.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "SessionContentSearchTests",
+    "SessionCatalogCacheTests",
+    "ChatSyncTests",
+    "SessionPresentationCacheTests",
+    "SessionRenameTests"
+   ],
+   "new": []
+  },
+  "D5b": {
+   "phase": "D",
+   "wave": 11,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Services/ChatReadState.swift",
+    "Conduit/Services/SessionPinSync.swift",
+    "Conduit/Services/ConversationIdentityIndex.swift",
+    "Conduit/Services/ChatStepSummaries.swift",
+    "Conduit/Services/ChatTakeover.swift",
+    "Conduit/Services/TranscriptPictureMemory.swift",
+    "Conduit/Services/ContextUploadPolicy.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "ConversationIdentityIndexTests",
+    "ConversationIdentityTests",
+    "ChatTakeoverTests",
+    "SessionYoloStoreTests",
+    "SessionLiveStatusIndexTests",
+    "PreviewTextTests",
+    "ContextUploadPolicyTests",
+    "TranscriptInlineImageTests",
+    "ChatTypographyTests+StepSummaries",
+    "ChatReadStateTests",
+    "SessionPinSyncTests",
+    "SessionCatalogLoadTests",
+    "TurnStateTests",
+    "ChatOnScreenTests"
+   ],
+   "new": []
+  },
+  "D6": {
+   "phase": "D",
+   "wave": 11,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Services/ChatScrollEngine.swift",
+    "Conduit/Services/ChatScrollState.swift",
+    "Conduit/Services/TranscriptPerformanceInstrumentation.swift",
+    "Conduit/Services/InteractionIdleState.swift",
+    "Conduit/Services/Haptics.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "ChatScrollEngineTests",
+    "ChatScrollStateTests",
+    "HapticsTests",
+    "InteractionHapticsTests",
+    "ResponseHapticStateTests",
+    "ChatMessageScrollTargetCacheIncrementalTests",
+    "TranscriptPerfLedgerContractTests",
+    "AppStateVoiceCapabilityTests+InteractionIdle"
+   ],
+   "new": []
+  },
+  "D7": {
+   "phase": "D",
+   "wave": 11,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Services/ProfileAppearanceStore.swift",
+    "Conduit/Services/NotifierPluginUpdate.swift",
+    "Conduit/Services/AgentSettings.swift",
+    "Conduit/Services/PresentedScreens.swift",
+    "Conduit/Services/Predictive.swift",
+    "Conduit/Services/CrashReportOffer.swift",
+    "Conduit/Services/SyncedPreferences.swift",
+    "Conduit/Services/NotifierPluginStatus.swift",
+    "Conduit/Services/AgentPlan.swift",
+    "Conduit/Services/ProfileGlowColors.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "PresentedScreensTests",
+    "SyncedPreferencesTests",
+    "ProfileGlowColorTests",
+    "ConnectionFailureTests+CrashReports",
+    "GatewayRestartTests+PluginUpdate",
+    "GatewayRestartTests+ChatCards",
+    "ChatTypographyTests+Predictive",
+    "HermesVoiceConfigurationServiceTests+AgentSettings"
+   ],
+   "new": []
+  },
+  "S1": {
+   "phase": "S",
+   "wave": 12,
+   "model": "sonnet",
+   "files": [],
+   "sections": [
+    "AppState_Support",
+    "AppState_Connection",
+    "AppState_Session",
+    "AppState_Runtime",
+    "AppState_UIState",
+    "AppState_SendingWhileConnecting",
+    "AppState_AskHermesAboutScreen",
+    "AppState_Capabilities",
+    "AppState_GeminiLiveVoiceMode",
+    "AppState_GPTLiveVoiceMode",
+    "AppState_GPTLiveBilling",
+    "AppState_GrokLiveVoiceMode",
+    "AppState_LocalLiveVoiceMode",
+    "AppState_WakePhrase",
+    "AppState_Cron",
+    "AppState_LifecycleCoordination",
+    "AppState_OfflineChatCache",
+    "AppState_SendingWhileConnecting2",
+    "AppState_SavedChatList",
+    "AppState_Persistence",
+    "AppState_VoiceHistory",
+    "AppState_Outbox",
+    "AppState_Titles",
+    "AppState_Resume",
+    "AppState_FindingChatsFromACall",
+    "AppState_WaitingCall",
+    "AppState_MinimisedLiveVoice",
+    "AppState_LiveVoiceAttachedToAChat",
+    "AppState_Stars"
+   ],
+   "tests": [
+    "OfflineChatCacheTests",
+    "AppStateBackgroundSignInTests",
+    "AppStateTurnSurfaceTests"
+   ],
+   "new": []
+  },
+  "D8": {
+   "phase": "D",
+   "wave": 12,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Services/AppState+PendingSend.swift",
+    "Conduit/Services/AppState+Predictive.swift",
+    "Conduit/Services/AppState+NotifierPluginUpdate.swift",
+    "Conduit/Services/AppState+AgentSettings.swift",
+    "Conduit/Services/AppState+PresentedScreens.swift",
+    "Conduit/Services/AppState+SyncedPreferences.swift",
+    "Conduit/Services/AppState+PinnedReplies.swift"
+   ],
+   "sections": [],
+   "tests": [],
+   "new": []
+  },
+  "D3t": {
+   "phase": "D",
+   "wave": 12,
+   "model": "sonnet",
+   "files": [],
+   "sections": [],
+   "tests": [
+    "HermesClientTests",
+    "MessageNormalizerTests",
+    "HermesClientTests+DashboardSockets",
+    "HermesClientTests+SocketTransport"
+   ],
+   "new": []
+  },
+  "S2": {
+   "phase": "S",
+   "wave": 12,
+   "model": "sonnet",
+   "files": [],
+   "sections": [
+    "AppState_ReadState",
+    "AppState_SessionReferences",
+    "AppState_QuotingIntoTheComposer",
+    "AppState_GroupChats",
+    "AppState_DashboardScopedPresentation",
+    "AppState_RelayGatewaysEachDashboardsHostReported",
+    "AppState_ConnectionManagement",
+    "AppState_ConnectionRepair",
+    "AppState_SavedDashboards"
+   ],
+   "tests": [
+    "AppStateMultiDashboardTests",
+    "SavedDashboardRegistryTests",
+    "ConnectionRepairTests",
+    "AppStatePendingLoginFailureTests",
+    "DashboardProxySignOutTests",
+    "DashboardSessionIsolationTests"
+   ],
+   "new": []
+  },
+  "S3": {
+   "phase": "S",
+   "wave": 12,
+   "model": "opus",
+   "files": [],
+   "sections": [
+    "AppState_AuthoritativeReconciliation",
+    "AppState_ReconnectAndSceneLifecycle",
+    "AppState_AuthoritativeTurnStateCorrection",
+    "AppState_StreamEventHandling"
+   ],
+   "tests": [
+    "AppStateDecisionFenceTests",
+    "BufferedEventDeduplicationTests",
+    "AppStateReasoningStreamTests"
+   ],
+   "new": []
+  },
+  "S4": {
+   "phase": "S",
+   "wave": 12,
+   "model": "sonnet",
+   "files": [],
+   "sections": [
+    "AppState_SharedDrafts",
+    "AppState_ConnectionTimeline",
+    "AppState_ForegroundObservationalRefresh",
+    "AppState_CrossSurfaceTranscriptFreshness",
+    "AppState_SessionManagement",
+    "AppState_OneChatOnTwoDevices",
+    "AppState_NewChat",
+    "AppState_Reactions"
+   ],
+   "tests": [
+    "MessageReactionTests",
+    "ChatListReturnTests",
+    "ChatReturnSurfaceTests"
+   ],
+   "new": []
+  },
+  "S5": {
+   "phase": "S",
+   "wave": 12,
+   "model": "sonnet",
+   "files": [],
+   "sections": [
+    "AppState_BotMode2",
+    "AppState_BotManagement",
+    "AppState_ProfilePhotosFromHermes",
+    "AppState_ComposerActions",
+    "AppState_ChatTakeover"
+   ],
+   "tests": [],
+   "new": []
+  },
+  "S6": {
+   "phase": "S",
+   "wave": 12,
+   "model": "sonnet",
+   "files": [],
+   "sections": [
+    "AppState_SlashCommands",
+    "AppState_SessionCompression",
+    "AppState_Capabilities2",
+    "AppState_ToolsCatalogForStepRows",
+    "AppState_ScheduledJobs",
+    "AppState_SecondaryProfileTitleRecovery",
+    "AppState_ChatSupportSurfaces"
+   ],
+   "tests": [
+    "SlashCommandParityTests",
+    "AppStateIntegerValueTests",
+    "AppStateSessionCompressTests",
+    "RedirectCompatibilityTests"
+   ],
+   "new": []
+  },
+  "S7": {
+   "phase": "S",
+   "wave": 12,
+   "model": "sonnet",
+   "files": [],
+   "sections": [
+    "AppState_BotMode",
+    "AppState_ProfilesAndPreferences",
+    "AppState_ClarifyLifecycle",
+    "AppState_AppleWatchVoice",
+    "AppState_LiveTurnProjection",
+    "AppState_AttachmentHelper",
+    "AppState_AllProfilesInOneChatsList"
+   ],
+   "tests": [
+    "ClarifyBatchStateTests",
+    "YoloProfileSwitchBookkeepingTests",
+    "CrossProfilePresentationCacheTests",
+    "AppStateMoveSessionTests",
+    "SessionYoloPersistenceTests"
+   ],
+   "new": []
+  },
+  "D9a": {
+   "phase": "D",
+   "wave": 13,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Views/Components/MarkdownText.swift",
+    "Conduit/Views/Components/MarkdownProseRun.swift",
+    "Conduit/Views/Components/MarkdownRichContent.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "MarkdownFallbackTests",
+    "MarkdownRichContentTests",
+    "MarkdownRichContentTests+LooseOrderedLists",
+    "MarkdownRichContentTests+OrderedListStart",
+    "MarkdownReferenceLinkTests",
+    "MarkdownTableLayoutTests",
+    "ChatTypographyTests+ProseRuns"
+   ],
+   "new": []
+  },
+  "D9b": {
+   "phase": "D",
+   "wave": 13,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Views/Components/MarkdownLargeDocumentView.swift",
+    "Conduit/Views/Components/MarkdownLargeDocument.swift",
+    "Conduit/Views/Components/MarkupBlock.swift",
+    "Conduit/Views/Components/HTMLPreviewBlock.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "MarkupBlockTests",
+    "MarkdownLargeDocumentTests",
+    "MarkdownLargeDocumentTests+HTMLPreview",
+    "MarkdownLargeDocumentTests+MediaPreview"
+   ],
+   "new": []
+  },
+  "D9c": {
+   "phase": "D",
+   "wave": 13,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Views/Components/SelectableTextView.swift",
+    "Conduit/Views/Components/MarkdownSelectionCoordinator.swift",
+    "Conduit/Views/Components/MarkdownSelectionHandles.swift",
+    "Conduit/Views/Components/SelectableTextCanvas.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "MarkdownSelectionCoordinatorTests",
+    "ChatTextSelectionTests",
+    "ChatTypographyTests+DrawnText",
+    "DrawnTextLinkTapTests",
+    "ChatTextSelectionTests+Accent"
+   ],
+   "new": []
+  },
+  "D10a": {
+   "phase": "D",
+   "wave": 13,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Views/Components/ComposerBar.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "ComposerDraftStoreTests"
+   ],
+   "new": []
+  },
+  "D10b": {
+   "phase": "D",
+   "wave": 13,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Views/Components/ComposerPasteTextView.swift",
+    "Conduit/Views/Components/ComposerAttachments.swift",
+    "Conduit/Views/Components/ReturnKeyTextView.swift",
+    "Conduit/Views/Components/PastedTextAttachment.swift",
+    "Conduit/Views/Components/ImageGalleryViewer.swift",
+    "Conduit/Views/Components/MediaPreviewPresenter.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "ComposerAttachmentPolicyTests",
+    "ComposerReturnKeyTests",
+    "ComposerFullEditorTests",
+    "PastedTextAttachmentTests",
+    "ComposerPasteTextViewTests",
+    "MarkdownLargeDocumentTests+ImageGallery",
+    "ComposerCameraCaptureTests"
+   ],
+   "new": []
+  },
+  "D11": {
+   "phase": "D",
+   "wave": 13,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Views/Components/StreamingText.swift",
+    "Conduit/Views/Components/ChatTypography.swift",
+    "Conduit/Views/Components/ChatCards.swift",
+    "Conduit/Views/Components/InlineAudioClip.swift",
+    "Conduit/Views/Components/ChatQuote.swift",
+    "Conduit/Views/Components/GatewayMediaTags.swift",
+    "Conduit/Views/Components/PredictiveRow.swift",
+    "Conduit/Views/Components/ChatCardHeight.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "ChatQuoteTests",
+    "ChatTypographyTests",
+    "ChatTypographyTests+FontStyle"
+   ],
+   "new": []
+  },
+  "D12a": {
+   "phase": "D",
+   "wave": 14,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Views/ChatView.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "ChatTitleScrollTests"
+   ],
+   "new": []
+  },
+  "D12b": {
+   "phase": "D",
+   "wave": 14,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Views/ChatActivityRows.swift",
+    "Conduit/Views/PinnedReplyViews.swift",
+    "Conduit/Views/ChatSupportSheets.swift",
+    "Conduit/Views/ToolResultViews.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "ChatTypographyTests+StepRows"
+   ],
+   "new": []
+  },
+  "D13a": {
+   "phase": "D",
+   "wave": 14,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Views/Login/LoginScreens.swift",
+    "Conduit/Views/Login/LoginFlowModel.swift",
+    "Conduit/Views/LoginView.swift",
+    "Conduit/Views/Login/AuthWebPasskeyNotice.swift",
+    "Conduit/Views/Login/DashboardCodeScanner.swift",
+    "Conduit/Views/SavedDashboardsView.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "AuthWebViewNavigationPolicyTests",
+    "TurnstileSubframeBoundaryTests",
+    "AuthWebPasskeyDetectorTests",
+    "LoginFieldNavigationTests",
+    "LoginFieldNavigationTests+ConnectLink",
+    "LoginCloudflareHandoffTests",
+    "LoginFlowSignInDecisionTests",
+    "DashboardCookieRestoreTests",
+    "CloudflareAccessTests (rest)"
+   ],
+   "new": []
+  },
+  "D13b": {
+   "phase": "D",
+   "wave": 14,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Views/ConnectionSetupView.swift",
+    "Conduit/Views/ConnectionSetupForm.swift",
+    "Conduit/Views/ConnectionSetupComponents.swift",
+    "Conduit/Views/ConduitPluginViews.swift",
+    "Conduit/Views/RootView.swift"
+   ],
+   "sections": [],
+   "tests": [],
+   "new": []
+  },
+  "D14a": {
+   "phase": "D",
+   "wave": 14,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Views/V2/V2ChatsView.swift",
+    "Conduit/Views/V2/V2Shell.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "V2SplitLayoutTests",
+    "SidebarLayoutTests+V2Filters",
+    "SidebarLayoutTests+AllProfiles"
+   ],
+   "new": []
+  },
+  "D14b": {
+   "phase": "D",
+   "wave": 14,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Views/V2/V2TopBar.swift",
+    "Conduit/Views/V2/V2ConversationScreen.swift",
+    "Conduit/Views/V2/V2SessionRow.swift",
+    "Conduit/Views/V2/V2ProjectPage.swift",
+    "Conduit/Views/V2/V2FinishSetupCard.swift",
+    "Conduit/Views/ProfilePickerSheet.swift",
+    "Conduit/Views/ModelPickerView.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "ModelPickerTests"
+   ],
+   "new": []
+  },
+  "D15": {
+   "phase": "D",
+   "wave": 14,
+   "model": "sonnet",
+   "files": [
+    "Conduit/Views/AuxiliaryViews.swift",
+    "Conduit/Views/UsageSettingsViews.swift",
+    "Conduit/Views/AgentSettingsViews.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "ProfileModelDefaultsTests+ConfigSchema",
+    "ConfigFieldLocalizationTests"
+   ],
+   "new": []
+  },
+  "D16": {
+   "phase": "D",
+   "wave": 14,
+   "model": "sonnet",
+   "files": [
+    "Conduit/ConduitApp.swift"
+   ],
+   "sections": [],
+   "tests": [
+    "AccessibilityLabelAuditTests"
+   ],
+   "new": []
+  },
+  "T1": {
+   "phase": "T",
+   "wave": 15,
+   "model": "opus",
+   "files": [],
+   "sections": [],
+   "tests": [
+    "AppStateChatResumeTests",
+    "CompactResumeTranscriptTests"
+   ],
+   "new": []
+  },
+  "T2": {
+   "phase": "T",
+   "wave": 15,
+   "model": "opus",
+   "files": [],
+   "sections": [],
+   "tests": [
+    "AppStateForegroundLifecycleTests"
+   ],
+   "new": []
+  },
+  "T3": {
+   "phase": "T",
+   "wave": 15,
+   "model": "opus",
+   "files": [],
+   "sections": [],
+   "tests": [
+    "BotModeTests"
+   ],
+   "new": []
+  }
+ },
+ "deferred": {
+  "bots-tasks-jobs": [
+   "BotManagementTests",
+   "BotMentionTests",
+   "CronJobDraftTests",
+   "GatewayRestartTests+Artifacts",
+   "GroupChatModelsTests",
+   "GroupChatSessionSafetyTests",
+   "GroupRoomFilesTests",
+   "HermesVoiceConfigurationServiceTests+OverlappingSaves",
+   "KanbanColumnBoardTests",
+   "KanbanSelectionLayoutTests",
+   "KanbanTests",
+   "KanbanTests+Capabilities",
+   "KanbanV2CorrectnessTests",
+   "KanbanV2Tests",
+   "KanbanV3ATests",
+   "KanbanV3BTests",
+   "KanbanV3CTests",
+   "KanbanV3DTests",
+   "ObservedValues",
+   "PulseFeedTests",
+   "PulseSettingsTests",
+   "RichCardTests",
+   "WebKitNavigationPolicyConformanceTests",
+   "WorkspaceFilesTests"
+  ],
+  "voice": [
+   "AVAudioCaptureServiceGenerationTests",
+   "AppStateContinuousConversationPreferenceTests",
+   "AppStateReadAloudTests",
+   "AppStateServerReplacementSpeechTests",
+   "AppStateVoiceCapabilityTests",
+   "AppStateVoiceCapabilityTests+VoiceModeSwitch",
+   "ArchivedVoiceCallsTests",
+   "ChatVoiceButtonTests",
+   "DictationClipInboxTests",
+   "DictationClipStoreTests",
+   "DictationEngineTests",
+   "EchoCancellingVoiceConversationAudioTests",
+   "GPTLiveVoiceTests",
+   "GeminiLiveVoiceTests",
+   "GrokLiveVoiceTests",
+   "HapticsVoiceIsolationTests",
+   "HermesCallWaitingTests",
+   "HermesCallsTests",
+   "HermesVoiceConfigurationServiceTests",
+   "HermesVoiceConfigurationServiceTests+SetupDefaults",
+   "HermesVoiceGatewayTimeoutTests",
+   "HermesVoiceGatewayTimeoutTests+Keepalive",
+   "HermesVoiceGatewayTimeoutTests+LiveTranscription",
+   "HermesVoiceGatewayTimeoutTests+LocalLive",
+   "HermesVoiceGatewayTimeoutTests+SpeechServer",
+   "LiveVoiceProviderConsentTests",
+   "LocalLiveJobNoticeTests",
+   "MessageReadAloudControllerTests",
+   "OnDeviceSpeechTests",
+   "PendingVoiceIntentLifecycleTests",
+   "QwenLiveVoiceTests",
+   "ScreenQuestionTests",
+   "SpeechRecognitionLocaleTests",
+   "SpeechRecognitionLocaleTests+WakePhrases",
+   "VoiceAudioEngineRecoveryTests",
+   "VoiceAudioSessionConfigurationTests",
+   "VoiceAudioSessionCoordinatorTests",
+   "VoiceAudioSessionQueueTests",
+   "VoiceBackgroundJobTests",
+   "VoiceBackgroundSuspensionTests",
+   "VoiceBargeInRoutePolicyTests",
+   "VoiceCallChatTests",
+   "VoiceChatFinderTests",
+   "VoiceConversationControllerTests",
+   "VoiceConversationControllerTests+LiveTranscription",
+   "VoiceHistoryTests",
+   "VoiceHistoryTests+CaptureCursor",
+   "VoiceHostToolsTests",
+   "VoiceJobLinkNoteTests",
+   "VoicePushToTalkTests",
+   "VoiceSetupIssueTests",
+   "VoiceSpeechDetectorTests",
+   "VoiceSpokenControlTests",
+   "VoiceTestSupport",
+   "VoiceTestSupportTests",
+   "WakeConfigurationStoreTests",
+   "WakeLifecycleTests",
+   "WakePhraseCompilerTests",
+   "WatchAudioBridgeTests",
+   "WatchCallLogBatchTests",
+   "WatchVoiceWireTests"
+  ],
+  "notifications": [
+   "GatewayRestartTests+CronNotifications",
+   "GatewayRestartTests+ReplySources",
+   "LiveActivityUpdateThrottleTests",
+   "NotificationCopyTests",
+   "NotificationDashboardOwnershipTests",
+   "NotificationDashboardOwnershipTests+DeviceToken",
+   "NotificationDashboardOwnershipTests+PreferenceSync",
+   "NotificationE2ETests",
+   "PushRelayBuildIdentityTests",
+   "SessionIdentityContractTests",
+   "WidgetLaunchLinkTests+LiveTurn"
+  ],
+  "phone-data": [
+   "HealthSyncTests",
+   "LocationSharingTests",
+   "LocationSpotsTests",
+   "PhoneSyncTests"
+  ],
+  "widgets-shortcuts-share": [
+   "AppStateScreenQuestionTests",
+   "AppStateWidgetLaunchTests",
+   "AskHermesPromptViewTests",
+   "ShareDraftTests",
+   "ShareDraftTests+AppState",
+   "ShortcutInboxTests",
+   "ShortcutSendTests",
+   "WidgetConfigurationTests",
+   "WidgetLaunchCoordinatorTests",
+   "WidgetLaunchLinkTests",
+   "WidgetSnapshotAppStateTests",
+   "WidgetSnapshotPublisherTests",
+   "WidgetSnapshotTests",
+   "WidgetVoiceCaptureTests"
+  ],
+  "wear-auto": [
+   "CarPlayTransportRecoveryTests",
+   "CarPlayVoiceTests"
+  ]
+ },
+ "excluded": {
+  "InterfaceOrientationTests": "iOS interface orientations",
+  "PrivacyManifestTests": "iOS privacy manifest",
+  "BackgroundTaskHoldTests": "BackgroundTaskHold is a no-op on Android (spec \u00a74)",
+  "ConnectionFailureTests+MetricKit": "MetricKit is replaced by ApplicationExitInfo (spec \u00a74)",
+  "SidebarLayoutTests": "legacy drawer shell (spec \u00a74); the +V2Filters/+AllProfiles helpers port with D14a",
+  "SidebarLayoutTests+CronFilter": "legacy drawer shell (spec \u00a74)",
+  "ChatScrollHostedTests": "SwiftUI hosting; its behaviors are smoke flow `scroll`",
+  "LongContextScalingFixtureTests": "UITextView binding mechanics; Android uses TextFieldState",
+  "SettledMessageIsolationTests": "SwiftUI body re-evaluation counts",
+  "TranscriptPerformanceFixtureTests": "SwiftUI hosting performance fixture",
+  "SelectableTextViewPresentationCacheTests": "TextKit measurement cache",
+  "DormancyHarnessEnvironment": "support for the excluded hosted tests only",
+  "PerformanceFixtureWait": "support for the excluded hosted tests only",
+  "LoopbackHTTPServer": "replaced by mockwebserver3 (docs/PORTING.md \u00a711)"
+ }
+}

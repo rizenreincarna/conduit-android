@@ -1,0 +1,9 @@
+{
+  "repository": "kaishi00/hermes-conduit",
+  "tag": "ios/v2.2.1-build-244",
+  "sha": "6ddae94189dd21becf2e2892038154c19d47393f",
+  "notifier": {
+    "repository": "kaishi00/hermes-conduit-notifier",
+    "sha": "9eac857"
+  }
+}
